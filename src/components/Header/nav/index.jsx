@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './style.module.scss';
 import { motion } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import { menuSlide } from '../animation';
 import Link from './Link';
 import Curve from './Curve';
