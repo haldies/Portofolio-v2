@@ -1,0 +1,90 @@
+.landing {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(20, 14, 43);
+  justify-content: center;
+  align-items: center;
+
+  .profil{
+    width: 700px;
+    height: 200px;
+    margin-bottom: 300px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 100px;
+
+    }
+    
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+  }
+  
+
+  .sliderContainer {
+    position: absolute;
+    top: calc(100vh - 350px);
+  }
+
+  .slider {
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .slider p {
+    position: relative;
+    margin: 0px;
+    color: white;
+    font-size: 230px;
+    font-weight: 500;
+    padding-right: 50px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 100px; // Adjust font size for smaller screens
+      padding-right: 20px; // Adjust padding for smaller screens
+    }
+  }
+  
+
+  .slider p:nth-of-type(2) {
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+
+  .description {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    @media screen and (max-width: 768px) {
+    z-index: 30;
+    left: 6%;
+    top: 530px;
+    }
+    
+
+    p {
+      font-size: 12;
+      margin: 0px;
+      margin-bottom: 10px;
+    }
+
+    svg {
+      transform: scale(2);
+      margin-bottom: 100px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+      
+    }
+  }
+}
