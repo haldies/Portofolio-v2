@@ -15,7 +15,7 @@ export default function index() {
     const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
     const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
     return (
-        <motion.div style={{ y }} ref={container} className={styles.contact}>
+        <motion.div  ref={container} className={styles.contact}>
             <div className={styles.body}>
                 <div className={styles.title}>
                     <span>
@@ -25,7 +25,7 @@ export default function index() {
                         <h2>Let's work</h2>
                     </span>
                     <h2>together</h2>
-                    <motion.div style={{ x }} className={styles.buttonContainer}>
+                    <motion.div  className={styles.buttonContainer}>
                         <Rounded backgroundColor={"#334BD3"} className={styles.button}>
                             <p>Get in touch</p>
                         </Rounded>

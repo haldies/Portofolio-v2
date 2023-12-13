@@ -19,7 +19,7 @@ export default function index() {
                 }
                 </p>
                 <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>Weaving the Digital World with Sophisticated Code.</motion.p>
-                <div data-scroll data-scroll-speed={0.1}>
+                <div >
                     <Rounded className={styles.button}>
                         <p>About me</p>
                     </Rounded>

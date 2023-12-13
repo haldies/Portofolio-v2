@@ -11,10 +11,7 @@
     width: 700px;
     height: 200px;
     margin-bottom: 300px;
-    @media screen and (max-width: 768px) {
-      margin-bottom: 100px;
-
-    }
+   
     
     img {
       width: 100%;
@@ -22,7 +19,6 @@
     }
 
   }
-  
 
   .sliderContainer {
     position: absolute;
@@ -65,7 +61,7 @@
     @media screen and (max-width: 768px) {
     z-index: 30;
     left: 6%;
-    top: 530px;
+    top: 80%;
     }
     
 
