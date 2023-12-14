@@ -8,14 +8,20 @@
   align-items: center;
 
   .profil{
-    width: 700px;
-    height: 200px;
-    margin-bottom: 300px;
+    width: 600px;
+    height: 350px;
+    margin-bottom: 150px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1%;
+    }
    
     
     img {
       width: 100%;
       border-radius: 20px;
+      @media screen and (max-width: 768px) {
+        height: 100%;
+      }
     }
 
   }
@@ -54,7 +60,7 @@
   .description {
     position: absolute;
     top: 35%;
-    left: 65%;
+    left: 75%;
     color: white;
     font-size: 24px;
     font-weight: 300;

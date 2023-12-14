@@ -5,9 +5,11 @@
     align-items: center;
     justify-content: center;
     background-color: #141516;
+    padding-top: 100px;
     position: relative;
+    z-index: 0;
     .body{
-        padding-top: 200px;
+
         width: 100%;
         max-width: 1800px;
         background-color: #141516;
@@ -108,8 +110,7 @@
                 position: absolute;
                 top: 30%;
                 left: 100%;
-                @media screen and (max-width: 768px) {
-                   
+                @media screen and (max-width: 768px) {        
                     left: 90%;
                 }
             }

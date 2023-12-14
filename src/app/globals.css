@@ -1,6 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+html,body{
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+}
 body{
+    width: 100%;
     margin: 0px;
-    overflow: hidden; 
+    /* overflow: hidden;  */
     cursor: wait;
 }
