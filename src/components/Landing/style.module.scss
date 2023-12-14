@@ -8,8 +8,10 @@
   align-items: center;
 
   .profil{
-    width: 600px;
-    height: 350px;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 450px;
     margin-bottom: 150px;
     @media screen and (max-width: 768px) {
       margin-bottom: 1%;
@@ -20,7 +22,8 @@
       width: 100%;
       border-radius: 20px;
       @media screen and (max-width: 768px) {
-        height: 100%;
+        height: 50%;
+        width: 50%;
       }
     }
 
@@ -29,7 +32,12 @@
   .sliderContainer {
     position: absolute;
     top: calc(100vh - 350px);
+    @media screen and (max-width: 768px) {
+      top: calc(100vh - 300px);
+      
+    }
   }
+
 
   .slider {
     position: relative;
@@ -42,11 +50,9 @@
     color: white;
     font-size: 230px;
     font-weight: 500;
-    padding-right: 50px;
-
     @media screen and (max-width: 768px) {
-      font-size: 100px; // Adjust font size for smaller screens
-      padding-right: 20px; // Adjust padding for smaller screens
+      font-size: 50px;
+      
     }
   }
   
@@ -67,7 +73,7 @@
     @media screen and (max-width: 768px) {
     z-index: 30;
     left: 6%;
-    top: 80%;
+    top: 73%;
     }
     
 
@@ -85,8 +91,6 @@
         }
     }
 
-    @media screen and (max-width: 768px) {
-      
-    }
+    
   }
 }

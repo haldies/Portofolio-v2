@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import styles from './style.module.scss';
+import Web from '../../assets/images/c2montreal.png';
 
 
 const slider1 = [
@@ -55,33 +56,37 @@ export default function index() {
 
     return (
         <div ref={container} className={styles.slidingImages}>
-            <motion.div style={{x: x1}} className={styles.slider}>
-                    {
-                        slider1.map( (project, index) => {
-                            return <div key={index} className={styles.project} style={{backgroundColor: project.color}} >
-                                <div className={styles.imageContainer}>
-                                                                   </div>
-                            </div>
-                        })
-                    }
-                </motion.div>
-                <motion.div style={{x: x2}} className={styles.slider}>
-                    {
-                        slider2.map( (project, index) => {
-                            return <div key={index} className={styles.project} style={{backgroundColor: project.color}} >
-                                <div key={index} className={styles.imageContainer}>
-                                    {/* <Image 
+            <motion.div style={{ x: x1 }} className={styles.slider}>
+                {
+                    slider1.map((project, index) => {
+                        return <div key={index} className={styles.project} style={{ backgroundColor: project.color }} >
+                            <div className={styles.imageContainer}>
+                                <img
                                     fill={true}
                                     alt={"image"}
-                                    src={`/images/${project.src}`}/> */}
-                                </div>
+                                    src={Web} />
                             </div>
-                        })
-                    }
-                </motion.div>
-                <motion.div className={styles.circleContainer}>
-                    <div  style={{height}} className={styles.circle}></div>
-                </motion.div>
+                        </div>
+                    })
+                }
+            </motion.div>
+            <motion.div style={{ x: x2 }} className={styles.slider}>
+                {
+                    slider2.map((project, index) => {
+                        return <div key={index} className={styles.project} style={{ backgroundColor: project.color }} >
+                            <div key={index} className={styles.imageContainer}>
+                                <img
+                                    fill={true}
+                                    alt={"image"}
+                                    src={Web} />
+                            </div>
+                        </div>
+                    })
+                }
+            </motion.div>
+            <motion.div className={styles.circleContainer}>
+                <div style={{ height }} className={styles.circle}></div>
+            </motion.div>
         </div>
     )
 }

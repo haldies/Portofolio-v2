@@ -4,28 +4,32 @@ import { useState, useEffect, useRef } from 'react';
 import Project from './components/project';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
+import ProjectsCard from './components/projectsCard/projects-card';
+import Webnft from '../../assets/images/web-nft.jpg';
+import WebCourse from '../../assets/images/c2montreal.png';
+import WebRemoveBg from '../../assets/images/websiteRemoveBg.jpg';
 
 import Rounded from '../../common/RoundedButton';
 
 const projects = [
   {
-    title: "Website Course Progaming",
-    src: "c2montreal.png",
+    title: "NFT STATIS",
+    src: "web-nft.jpg",
     color: "#000000"
   },
   {
-    title: "Website Nft Statis",
-    src: "officestudio.png",
+    title: "COURSE PROGAMMING",
+    src: "c2montreal.png",
     color: "#8C8C8C"
   },
   {
     title: "Game 2D & 3D",
-    src: "locomotive.png",
+    src: "web-nft.jpg",
     color: "#EFE8D3"
   },
   {
-    title: "Website Remove Background",
-    src: "silencio.png",
+    title: "CLEARY",
+    src: "websiteRemoveBg.jpg",
     color: "#706D63"
   }
 ]
@@ -85,6 +89,31 @@ export default function Home() {
           })
         }
       </div>
+      <ProjectsCard className={styles.projectsCard}
+      link={`https://tester-zushi.netlify.app/`}
+      title="NFT STATIS"
+      role="2023"
+      tahun="Frontend Engineer"
+      Webnft={Webnft}
+       />
+       <ProjectsCard className={styles.projectsCard}
+      title="COURSE PROGAMMING"
+      role="2023"
+      tahun="Frontend Engineer"
+      Webnft={WebCourse}
+       />
+       <ProjectsCard className={styles.projectsCard}
+      title="CLEARY"
+      role="2023"
+      tahun="Frontend Engineer"
+      Webnft={WebRemoveBg}
+       />
+       <ProjectsCard className={styles.projectsCard}
+      title="UP"
+      role="2023"
+      tahun="Frontend Engineer"
+      Webnft={Webnft}
+       />
       <Rounded>
         <p>More work</p>
       </Rounded>
@@ -95,7 +124,12 @@ export default function Home() {
               projects.map((project, index) => {
                 const { src, color } = project
                 return <div className={styles.modal} style={{ backgroundColor: color }} key={`modal_${index}`}>
-
+                  <img 
+                    src={`/src/assets/images/${src}`}
+                    width={300}
+                    height={0}
+                    alt="image"
+                    />
                 </div>
               })
             }

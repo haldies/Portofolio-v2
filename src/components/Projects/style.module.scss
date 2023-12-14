@@ -5,8 +5,10 @@
     padding-right: 200px;
     flex-direction: column;
     margin-top: 300px;
+    
     @media screen and (max-width: 768px) {
         margin-top: 50px;
+       
     }
 
 
@@ -18,6 +20,7 @@
   
     }
 
+
     .body{
         max-width: 1400px;
         width: 100%;
@@ -28,11 +31,13 @@
         margin-bottom: 100px;
         @media screen and (max-width: 768px) {
             width: 70%;
+            display: none;
       
         }
         
         
     }
+    
     
     .modalContainer{
         height: 350px;

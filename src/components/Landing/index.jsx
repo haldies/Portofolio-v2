@@ -48,7 +48,7 @@ export default function Home() {
     <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
       <div className={styles.body}>
         <div className={styles.profil}>
-          <img src={Profil} alt="" />
+          <img src={Profil} alt="profil" />
         </div>
         <div className={styles.sliderContainer}>
           <div ref={slider} className={styles.slider}>
