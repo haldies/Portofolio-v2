@@ -1,4 +1,4 @@
-'use client';
+
 import styles from './style.module.scss';
 import Rounded from '../../common/RoundedButton';
 import Magnetic from '../../common/Magnetic';
@@ -28,18 +28,22 @@ export default function Nav() {
                 <div className={styles.nav}>
                     <Magnetic>
                         <div className={styles.el}>
-                            <a>Work</a>     
+                            <a href='/p'>Project</a>     
                         </div>
                     </Magnetic>
                     <Magnetic>
                         <div className={styles.el}>
-                            <a>About</a>          
+                            <a href='/p'>About</a>          
                         </div>
                     </Magnetic>
                     <Magnetic>
                         <div className={styles.el}>
-                            <a>Contact</a>
-                            
+                            <a href='/p'>Contact</a>
+                        </div>
+                    </Magnetic>
+                    <Magnetic>
+                        <div className={styles.el}>
+                            <a href='https://github.com/haldies' target="_blank">Github</a>
                         </div>
                     </Magnetic>
                 </div>

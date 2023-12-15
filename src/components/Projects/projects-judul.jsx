@@ -1,4 +1,4 @@
-'use client';
+
 import styles from './style.module.scss'
 import { useState, useEffect, useRef } from 'react';
 import Project from './components/project';
@@ -14,23 +14,27 @@ import Rounded from '../../common/RoundedButton';
 const projects = [
   {
     title: "NFT STATIS",
-    src: "web-nft.jpg",
-    color: "#000000"
+    src: "https://utfs.io/f/0a350864-895d-4833-a10c-154e8211099a-k7p5mr.jpg",
+    color: "#000000",
+    link : "https://tester-zushi.netlify.app/"
   },
   {
     title: "COURSE PROGAMMING",
-    src: "c2montreal.png",
-    color: "#8C8C8C"
+    src: "https://utfs.io/f/0a350864-895d-4833-a10c-154e8211099a-k7p5mr.jpg",
+    color: "#8C8C8C",
+    link : "https://tester-zushi.netlify.app/"
   },
   {
     title: "Game 2D & 3D",
-    src: "web-nft.jpg",
-    color: "#EFE8D3"
+    src: "https://utfs.io/f/0a350864-895d-4833-a10c-154e8211099a-k7p5mr.jpg",
+    color: "#E1A8D3",
+    link : "https://tester-zushi.netlify.app/"
   },
   {
     title: "CLEARY",
-    src: "websiteRemoveBg.jpg",
-    color: "#706D63"
+    src: "https://utfs.io/f/7ffb6b8c-e358-41bf-8d7d-e108ec422efa-eh6x5o.jpg",
+    color: "#EFE8D3",
+    link : "https://tester-zushi.netlify.app/"
   }
 ]
 
@@ -85,13 +89,13 @@ export default function Home() {
       <div className={styles.body}>
         {
           projects.map((project, index) => {
-            return <Project index={index} title={project.title} manageModal={manageModal} key={index} />
+            return <Project index={index} title={project.title} link={project.link} manageModal={manageModal} key={index} />
           })
         }
       </div>
       <div className={styles.ContainerProjectCard}>
         <ProjectsCard className={styles.projectsCard}
-          link={`https://tester-zushi.netlify.app/`}
+          link={`c`}
           title="NFT STATIS"
           role="2023"
           tahun="Frontend Engineer"
@@ -127,11 +131,12 @@ export default function Home() {
           <div style={{ top: index * -100 + "%" }} className={styles.modalSlider}>
             {
               projects.map((project, index) => {
+             
                 const { src, color } = project
-                return <div className={styles.modal} style={{ backgroundColor: color }} key={`modal_${index}`}>
+                return <div className={styles.modal} style={{ backgroundColor: color }} key={`modal_${index}`}>  
                   <img
-                    src={`/assets/${src}`}
-                    width={300}
+                    src={`${src}`}
+                    width={350}
                     height={0}
                     alt="image"
                   />

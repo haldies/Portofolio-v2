@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import styles from './style.module.scss';
-import Web from '../../assets/c2montreal.png';
+import Web from '../../assets/websiteRemoveBg.jpg';
 
 
 const slider1 = [
