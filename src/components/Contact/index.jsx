@@ -57,7 +57,10 @@ export default function index() {
                             </Magnetic>
                         </span>
                         <Magnetic>
-                            <p>Dribbble</p>
+                            <p>Github</p>
+                        </Magnetic>
+                        <Magnetic>
+                            <p>Tiktok</p>
                         </Magnetic>
                         <Magnetic>
                             <p>Linkedin</p>

@@ -1,25 +1,15 @@
 .projects{
     display: flex;
-    align-items: center;
     padding-left: 200px;
     padding-right: 200px;
     flex-direction: column;
     margin-top: 300px;
-    
-    @media screen and (max-width: 768px) {
-        margin-top: 50px;
-       
-    }
-
-
     @media screen and (max-width: 768px) {
         justify-content: center;
         padding-left: 0px;
         padding-right: 0px;
-        width: 100%;
-  
+        margin-top: 50px;
     }
-
 
     .body{
         max-width: 1400px;
@@ -30,14 +20,21 @@
         justify-content: center;
         margin-bottom: 100px;
         @media screen and (max-width: 768px) {
-            width: 70%;
             display: none;
-      
         }
         
         
     }
-    
+    .ContainerProjectCard{
+        display: 100%;
+    }
+    .btnMorework{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
     
     .modalContainer{
         height: 350px;

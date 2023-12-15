@@ -5,9 +5,9 @@ import Project from './components/project';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import ProjectsCard from './components/projectsCard/projects-card';
-import Webnft from '../../assets/images/web-nft.jpg';
-import WebCourse from '../../assets/images/c2montreal.png';
-import WebRemoveBg from '../../assets/images/websiteRemoveBg.jpg';
+import Webnft from '../../assets/web-nft.jpg';
+import WebCourse from '../../assets/c2montreal.png';
+import WebRemoveBg from '../../assets/websiteRemoveBg.jpg';
 
 import Rounded from '../../common/RoundedButton';
 
@@ -89,34 +89,39 @@ export default function Home() {
           })
         }
       </div>
-      <ProjectsCard className={styles.projectsCard}
-      link={`https://tester-zushi.netlify.app/`}
-      title="NFT STATIS"
-      role="2023"
-      tahun="Frontend Engineer"
-      Webnft={Webnft}
-       />
-       <ProjectsCard className={styles.projectsCard}
-      title="COURSE PROGAMMING"
-      role="2023"
-      tahun="Frontend Engineer"
-      Webnft={WebCourse}
-       />
-       <ProjectsCard className={styles.projectsCard}
-      title="CLEARY"
-      role="2023"
-      tahun="Frontend Engineer"
-      Webnft={WebRemoveBg}
-       />
-       <ProjectsCard className={styles.projectsCard}
-      title="UP"
-      role="2023"
-      tahun="Frontend Engineer"
-      Webnft={Webnft}
-       />
-      <Rounded>
-        <p>More work</p>
-      </Rounded>
+      <div className={styles.ContainerProjectCard}>
+        <ProjectsCard className={styles.projectsCard}
+          link={`https://tester-zushi.netlify.app/`}
+          title="NFT STATIS"
+          role="2023"
+          tahun="Frontend Engineer"
+          Webnft={Webnft}
+        />
+        <ProjectsCard className={styles.projectsCard}
+          title="COURSE PROGAMMING"
+          role="2023"
+          tahun="Frontend Engineer"
+          Webnft={WebCourse}
+        />
+        <ProjectsCard className={styles.projectsCard}
+          title="CLEARY"
+          role="2023"
+          tahun="Frontend Engineer"
+          Webnft={WebRemoveBg}
+        />
+        <ProjectsCard className={styles.projectsCard}
+          title="UP"
+          role="2023"
+          tahun="Frontend Engineer"
+          Webnft={Webnft}
+        />
+
+      </div>
+      <div className={styles.btnMorework}>
+        <Rounded>
+          <p>More work</p>
+        </Rounded>
+      </div>
       <>
         <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
           <div style={{ top: index * -100 + "%" }} className={styles.modalSlider}>
@@ -124,12 +129,12 @@ export default function Home() {
               projects.map((project, index) => {
                 const { src, color } = project
                 return <div className={styles.modal} style={{ backgroundColor: color }} key={`modal_${index}`}>
-                  <img 
-                    src={`/src/assets/images/${src}`}
+                  <img
+                    src={`/assets/${src}`}
                     width={300}
                     height={0}
                     alt="image"
-                    />
+                  />
                 </div>
               })
             }

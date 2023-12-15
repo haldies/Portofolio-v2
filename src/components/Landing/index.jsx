@@ -6,7 +6,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { slideUp } from './animation';
 import { motion } from 'framer-motion';
-import Profil from '../../assets/images/Profil.png'
+import Profil from '../../assets/Profil.png'
 
 export default function Home() {
 
@@ -41,7 +41,7 @@ export default function Home() {
     gsap.set(firstText.current, { xPercent: xPercent })
     gsap.set(secondText.current, { xPercent: xPercent })
     requestAnimationFrame(animate);
-    xPercent += 0.04 * direction;
+    xPercent += 0.10 * direction;
   }
 
   return (

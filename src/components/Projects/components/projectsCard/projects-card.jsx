@@ -41,7 +41,6 @@ const projects = [
 
 
 export default function ProjectsCard(Props) {
-  console.log(Props.link)
 
   return (
     <div className={styles.projects}>
