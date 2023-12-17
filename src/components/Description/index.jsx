@@ -11,7 +11,7 @@ export default function index() {
     const isInView = useInView(description)
    
     return (
-        <div ref={description} className={styles.description}>
+        <section id='about' ref={description} className={styles.description}>
             <div className={styles.body}>
                 <p >
                 {
@@ -33,6 +33,6 @@ export default function index() {
                     </Rounded>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

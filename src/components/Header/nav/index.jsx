@@ -28,7 +28,7 @@ export default function Nav({isActive, setIsActive}) {
 
 
   return (
-    <motion.div
+    <motion.nav
       variants={menuSlide}
       initial="initial"
       animate={isActive ? "enter" : "exit"}
@@ -52,6 +52,6 @@ export default function Nav({isActive, setIsActive}) {
 
       </div>
 
-    </motion.div>
+    </motion.nav>
   );
 }

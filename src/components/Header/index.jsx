@@ -14,7 +14,7 @@ export default function Nav() {
 
     return (
         <>
-            <div  className={styles.header}>
+            <header  className={styles.header}>
                 <Magnetic>
                 <div className={styles.logo}>
                     <p className={styles.copyright}>©</p>
@@ -25,29 +25,29 @@ export default function Nav() {
                     </div>
                 </div>
                 </Magnetic>
-                <div className={styles.nav}>
+                <nav className={styles.nav}>
                     <Magnetic>
                         <div className={styles.el}>
-                            <a href='/p'>Project</a>     
+                        <a href='https://github.com/haldies' target="_blank">Github</a>    
                         </div>
                     </Magnetic>
                     <Magnetic>
                         <div className={styles.el}>
-                            <a href='/p'>About</a>          
+                            <a href='#about'>About</a>          
                         </div>
                     </Magnetic>
                     <Magnetic>
                         <div className={styles.el}>
-                            <a href='/p'>Contact</a>
+                            <a href='#footer'>Contact</a>
                         </div>
                     </Magnetic>
                     <Magnetic>
                         <div className={styles.el}>
-                            <a href='https://github.com/haldies' target="_blank">Github</a>
+                        <a href='#project' >Project</a>
                         </div>
                     </Magnetic>
-                </div>
-            </div>
+                </nav>
+            </header>
             <div  className={styles.headerButtonContainer}>
                 <Rounded onClick={() => setIsActive(!isActive)}  className={styles.button}>
                     <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>

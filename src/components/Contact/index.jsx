@@ -15,7 +15,7 @@ export default function index() {
     const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
     const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
     return (
-        <motion.div  ref={container} className={styles.contact}>
+        <motion.div ref={container} className={styles.contact}>
             <div className={styles.body}>
                 <div className={styles.title}>
                     <span>
@@ -25,7 +25,7 @@ export default function index() {
                         <h2>Let's work</h2>
                     </span>
                     <h2>together</h2>
-                    <motion.div  className={styles.buttonContainer}>
+                    <motion.div className={styles.buttonContainer}>
                         <Rounded backgroundColor={"#334BD3"} className={styles.button}>
                             <p>Send it</p>
                         </Rounded>
@@ -53,17 +53,17 @@ export default function index() {
                         <span>
                             <h3>socials</h3>
                             <Magnetic>
-                                <p>Instagram</p>
+                                <a href='https://www.instagram.com/gerhardien_' target='_blank'>Instagram</a>
                             </Magnetic>
                         </span>
                         <Magnetic>
-                            <p>Github</p>
+                            <a href='https://github.com/haldies' target="_blank">Github</a>
                         </Magnetic>
                         <Magnetic>
-                            <p>Tiktok</p>
+                            <a href='https://www.tiktok.com/@gerhardien' target='_blank'>Tiktok</a>
                         </Magnetic>
                         <Magnetic>
-                            <p>Linkedin</p>
+                            <a href='https://www.linkedin.com/in/haldies/' target='_blank'>Linkedin</a>
                         </Magnetic>
                     </div>
                 </div>

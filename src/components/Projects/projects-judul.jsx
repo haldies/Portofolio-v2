@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import ProjectsCard from './components/projectsCard/projects-card';
 import Webnft from '../../assets/web-nft.jpg';
-import WebCourse from '../../assets/c2montreal.png';
 import WebRemoveBg from '../../assets/websiteRemoveBg.jpg';
 
 import Rounded from '../../common/RoundedButton';
@@ -22,7 +21,7 @@ const projects = [
     title: "COURSE PROGAMMING",
     src: "https://utfs.io/f/0a350864-895d-4833-a10c-154e8211099a-k7p5mr.jpg",
     color: "#8C8C8C",
-    link : "https://tester-zushi.netlify.app/"
+    link : "https://coursecode.vercel.app/"
   },
   {
     title: "Game 2D & 3D",
@@ -85,7 +84,7 @@ export default function Home() {
   }
 
   return (
-    <main onMouseMove={(e) => { moveItems(e.clientX, e.clientY) }} className={styles.projects}>
+    <section id='project' onMouseMove={(e) => { moveItems(e.clientX, e.clientY) }} className={styles.projects}>
       <div className={styles.body}>
         {
           projects.map((project, index) => {
@@ -95,7 +94,7 @@ export default function Home() {
       </div>
       <div className={styles.ContainerProjectCard}>
         <ProjectsCard className={styles.projectsCard}
-          link={`c`}
+        
           title="NFT STATIS"
           role="2023"
           tahun="Frontend Engineer"
@@ -105,13 +104,13 @@ export default function Home() {
           title="COURSE PROGAMMING"
           role="2023"
           tahun="Frontend Engineer"
-          Webnft={WebCourse}
+          Webnft={Webnft}
         />
         <ProjectsCard className={styles.projectsCard}
           title="CLEARY"
           role="2023"
           tahun="Frontend Engineer"
-          Webnft={WebRemoveBg}
+          Webnft={ WebRemoveBg}
         />
         <ProjectsCard className={styles.projectsCard}
           title="UP"
@@ -131,7 +130,6 @@ export default function Home() {
           <div style={{ top: index * -100 + "%" }} className={styles.modalSlider}>
             {
               projects.map((project, index) => {
-             
                 const { src, color } = project
                 return <div className={styles.modal} style={{ backgroundColor: color }} key={`modal_${index}`}>  
                   <img
@@ -148,6 +146,6 @@ export default function Home() {
         <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
         <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
       </>
-    </main>
+    </section>
   )
 }

@@ -44,7 +44,7 @@ export default function Home() {
   }
 
   return (
-    <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
+    <motion.section variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
       <div className={styles.body}>
         <div className={styles.profil}>
           <img src={Profil} alt="profil" />
@@ -63,6 +63,6 @@ export default function Home() {
           <p>Engineer & content Creator</p>
         </div>
       </div>
-    </motion.main>
+    </motion.section>
   )
 }
