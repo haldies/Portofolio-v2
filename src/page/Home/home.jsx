@@ -1,12 +1,12 @@
 import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
-import Preloader from '../../components/Preloader/index';
-import Landing from '../../components/Landing/index';
+import Preloader from '../../components/Preloader/preloader';
+import Landing from '../../components/Main/Main';
 import Projects from '../../components/Projects/projects-judul';
-import Description from '../../components/Description/index';
-import SlidingImages from '../../components/SlidingImages/index';
-import Contact from '../../components/Contact/index';
+import Description from '../../components/About/About';
+import SlidingImages from '../../components/SlidingImages/sliding-images';
+import Contact from '../../components/Contact/contact';
 import RootLayout from '../../app/layout';
 
 

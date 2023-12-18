@@ -1,13 +1,24 @@
+$mobile: 768px;
+$tables: 1024px;
+
+
 .projects{
     display: flex;
     padding-left: 200px;
     padding-right: 200px;
     flex-direction: column;
     margin-top: 300px;
-    @media screen and (max-width: 768px) {
+    align-items: center;
+    -webkit-align-items:center;
+    @media screen and (max-width: $tables) {
+        padding-left: 100px;
+        padding-right: 100px;
+        
+    }
+    @media screen and (max-width: $mobile) {
         justify-content: center;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-top: 50px;
     }
 
@@ -19,16 +30,14 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 100px;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $mobile) {
             display: none;
         }
         
         
     }
-    .ContainerProjectCard{
-        display: 100%;
-    }
     .btnMorework{
+        margin-top: 20px;
         width: 100%;
         display: flex;
         justify-content: center;

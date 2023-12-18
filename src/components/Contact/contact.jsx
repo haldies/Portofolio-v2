@@ -1,11 +1,11 @@
 import styles from './style.module.scss';
 
-import Rounded from '../../common/RoundedButton';
+import Rounded from '../../common/RoundedButton/rounded-button';
 import { useRef } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
-import Magnetic from '../../common/Magnetic';
+import Magnetic from '../../common/Magnetic/magnetic';
 
-export default function index() {
+export default function Contact() {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,

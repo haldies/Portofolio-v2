@@ -1,20 +1,28 @@
 
-import styles from './style.module.scss'
-export default function ProjectsCard(Props) {
 
+import styles from './style.module.scss'
+
+
+export default function ProjectsCard(Props) {
   return (
-    <div className={styles.projects}>
+    <a href={Props.link} className={styles.projects}>
 
       <div className={styles.card}>
         <div className={styles.imageProjects}>
           <img src={Props.Webnft} />
         </div>
-        <a className={styles.title} href={Props.link} target="_blank" >{Props.title}</a>
+
+
+        <div className={styles.wrapperTitle}>
+          <h2 className={styles.title}>{Props.title}
+          </h2>
+
+        </div>
         <div className={styles.containerDeskripsi}>
           <p className={styles.tahun}>{Props.tahun}</p>
           <p className={styles.role}>{Props.role}</p>
         </div>
       </div>
-    </div>
+    </a>
   )
 }

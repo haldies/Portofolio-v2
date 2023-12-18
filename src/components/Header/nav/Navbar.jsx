@@ -7,18 +7,22 @@ import { menuSlide } from '../animation';
 
 const navItems = [
   {
+    id: 1,
     title: "Home",
     link: "/",
   },
   {
+    id: 2,
     title: "Project",
     link: "/work",
   },
   {
+    id: 3,
     title: "About",
     link: "/about",
   },
   {
+    id: 4,
     title: "Contact",
     link: "/contact",
   },
@@ -41,11 +45,10 @@ export default function Nav({isActive, setIsActive}) {
             <p>Navigation</p>
           </div>
           {
-            navItems.map((data) => {
-              
-              return <>
-                <a href={data.link} >{data.title}</a>
-              </>
+            navItems.map((data) => {         
+              return <div key={data.id}>
+                <a key={data.id} href={data.link} >{data.title}</a>
+              </div>
             })
           }
         </div>

@@ -8,32 +8,37 @@ import ProjectsCard from './components/projectsCard/projects-card';
 import Webnft from '../../assets/web-nft.jpg';
 import WebRemoveBg from '../../assets/websiteRemoveBg.jpg';
 
-import Rounded from '../../common/RoundedButton';
+import Rounded from '../../common/RoundedButton/rounded-button';
 
 const projects = [
   {
-    title: "NFT STATIS",
-    src: "https://utfs.io/f/0a350864-895d-4833-a10c-154e8211099a-k7p5mr.jpg",
-    color: "#000000",
-    link : "https://tester-zushi.netlify.app/"
-  },
-  {
     title: "COURSE PROGAMMING",
     src: "https://utfs.io/f/0a350864-895d-4833-a10c-154e8211099a-k7p5mr.jpg",
+    color: "#000000",
+    link: "/webcourse",
+    deskripsi: "Full Stack Developer"
+  },
+  {
+    title: "WEB 3 NFT STATIS",
+    src: "https://utfs.io/f/0a350864-895d-4833-a10c-154e8211099a-k7p5mr.jpg",
     color: "#8C8C8C",
-    link : "https://coursecode.vercel.app/"
+    link: "/webnft",
+    deskripsi: "Frontend Developer",
   },
   {
     title: "Game 2D & 3D",
     src: "https://utfs.io/f/0a350864-895d-4833-a10c-154e8211099a-k7p5mr.jpg",
     color: "#E1A8D3",
-    link : "https://tester-zushi.netlify.app/"
+    link: "/",
+    deskripsi: "Game Developer",
   },
   {
     title: "CLEARY",
     src: "https://utfs.io/f/7ffb6b8c-e358-41bf-8d7d-e108ec422efa-eh6x5o.jpg",
     color: "#EFE8D3",
-    link : "https://tester-zushi.netlify.app/"
+    link: "/",
+    deskripsi: "Frontend Developer",
+
   }
 ]
 
@@ -88,31 +93,35 @@ export default function Home() {
       <div className={styles.body}>
         {
           projects.map((project, index) => {
-            return <Project index={index} title={project.title} link={project.link} manageModal={manageModal} key={index} />
+            return <Project index={index} title={project.title} link={project.link} deskripsi={project.deskripsi} manageModal={manageModal} key={index} />
           })
         }
       </div>
       <div className={styles.ContainerProjectCard}>
         <ProjectsCard className={styles.projectsCard}
-        
-          title="NFT STATIS"
-          role="2023"
-          tahun="Frontend Engineer"
-          Webnft={Webnft}
-        />
-        <ProjectsCard className={styles.projectsCard}
+          link="/webcourse"
           title="COURSE PROGAMMING"
           role="2023"
           tahun="Frontend Engineer"
           Webnft={Webnft}
         />
         <ProjectsCard className={styles.projectsCard}
+
+          link="/webnft"
+          title="NFT STATIS"
+          role="2023"
+          tahun="Frontend Engineer"
+          Webnft={Webnft}
+        />
+        <ProjectsCard className={styles.projectsCard}
+        link="/"
           title="CLEARY"
           role="2023"
           tahun="Frontend Engineer"
-          Webnft={ WebRemoveBg}
+          Webnft={WebRemoveBg}
         />
         <ProjectsCard className={styles.projectsCard}
+        link="/"
           title="UP"
           role="2023"
           tahun="Frontend Engineer"
@@ -131,7 +140,7 @@ export default function Home() {
             {
               projects.map((project, index) => {
                 const { src, color } = project
-                return <div className={styles.modal} style={{ backgroundColor: color }} key={`modal_${index}`}>  
+                return <div className={styles.modal} style={{ backgroundColor: color }} key={`modal_${index}`}>
                   <img
                     src={`${src}`}
                     width={350}

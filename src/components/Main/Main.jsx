@@ -7,7 +7,7 @@ import { slideUp } from './animation';
 import { motion } from 'framer-motion';
 import Profil from '../../assets/Profil.png'
 
-export default function Home() {
+export default function Main() {
 
   const firstText = useRef(null);
   const secondText = useRef(null);
@@ -50,7 +50,7 @@ export default function Home() {
           <img src={Profil} alt="profil" />
         </div>
         <div className={styles.sliderContainer}>
-          <div ref={slider} className={styles.slider}>
+          <div href="#root" ref={slider} className={styles.slider}>
             <p ref={firstText}>Haldies Gerhardien -</p>
             <p ref={secondText}>Haldies Gerhardien -</p>
           </div>

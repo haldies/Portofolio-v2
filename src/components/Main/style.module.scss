@@ -1,3 +1,7 @@
+$mobile: 768px;
+$tables: 1024px;
+
+
 .landing {
   position: relative;
   display: flex;
@@ -7,21 +11,34 @@
   justify-content: center;
   align-items: center;
 
-  .profil{
+  .profil {
     display: flex;
     justify-content: center;
     width: 700px;
     height: 450px;
     margin-bottom: 150px;
-    @media screen and (max-width: 768px) {
+
+  
+    @media screen and (max-width: $tables) {
+      align-items: center;
       margin-bottom: 1%;
+
     }
-   
-    
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 20%;
+    }
+
+
+
     img {
       width: 100%;
       border-radius: 20px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $tables) {
+        height: 70%;
+        width: 70%;
+      }
+
+      @media screen and (max-width: $mobile) {
         height: 50%;
         width: 50%;
       }
@@ -32,9 +49,14 @@
   .sliderContainer {
     position: absolute;
     top: calc(100vh - 350px);
-    @media screen and (max-width: 768px) {
-      top: calc(100vh - 400px);
-      
+
+    @media screen and (max-width: $tables) {
+      top: calc(100vh - 200px);
+
+    }
+
+    @media screen and (max-width: $mobile) {
+      top: calc(100vh - 350px);
     }
   }
 
@@ -50,12 +72,18 @@
     color: white;
     font-size: 230px;
     font-weight: 500;
-    @media screen and (max-width: 768px) {
+
+    @media screen and (max-width: $tables) {
+      font-size: 100px;
+
+    }
+
+    @media screen and (max-width: $mobile) {
       font-size: 50px;
-      
+
     }
   }
-  
+
 
   .slider p:nth-of-type(2) {
     position: absolute;
@@ -70,12 +98,19 @@
     color: white;
     font-size: 24px;
     font-weight: 300;
-    @media screen and (max-width: 768px) {
-    z-index: 30;
-    left: 6%;
-    top: 70%;
+    @media screen and (max-width: $tables) {
+      font-size: 18px;
+      top: 30%;
+      left: 80%;
+      
     }
-    
+
+    @media screen and (max-width: $mobile) {
+      z-index: 30;
+      left: 6%;
+      top: 70%;
+    }
+
 
     p {
       font-size: 12;
@@ -86,11 +121,15 @@
     svg {
       transform: scale(2);
       margin-bottom: 100px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $tables) {
         margin-bottom: 20px;
-        }
+      }
+
+      @media screen and (max-width: $mobile) {
+        margin-bottom: 20px;
+      }
     }
 
-    
+
   }
 }

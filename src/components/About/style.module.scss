@@ -1,3 +1,7 @@
+$mobile: 768px;
+$tables: 1024px;
+
+
 .description{
     position: relative;
     padding-left: 200px;
@@ -5,13 +9,20 @@
     margin-top: 200px;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: $tables) {
+        padding-left: 50px;
+        padding-right: 50px;
+
+      }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $mobile) {
         padding-left: 20px;
         padding-right: 20px;
         margin-top: 35%;
         padding-bottom: 20%;
-      }
+    }
+      
     
 
     .body{
@@ -19,7 +30,7 @@
         display: flex;
         gap: 50px;
         position: relative;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $mobile) {
             width: 100%;
             flex-direction: column;
           }
@@ -31,7 +42,11 @@
                 width: 100%;
                 font-size: 36px;
                 font-weight: 600;
-                @media screen and (max-width: 768px) {
+               
+                @media screen and (max-width: $tables) {
+                    font-size: 30px;
+                }
+                  @media screen and (max-width: $mobile) {
                     font-size: 25px;
                     width: 100%;
                 }
@@ -61,7 +76,7 @@
                     overflow: hidden;
                     display: inline-flex;
                 }
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: $mobile) {
                     padding-left: 0px;
                 }
             }
@@ -81,7 +96,13 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: $tables) {
+                width: 150px;
+                height: 150px;
+                top: 75%;
+                left: calc(100% - 210px); 
+            }
+            @media screen and (max-width: $mobile) {
                 left: calc(100% - 170px); 
                 width: 150px;
                 height: 150px;

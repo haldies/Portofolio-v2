@@ -1,3 +1,5 @@
+$mobile: 768;
+$tables: 1024px;
 .slidingImages{
     overflow-x: hidden;
     display: flex;
@@ -7,7 +9,7 @@
     margin-top: 200px;
     background-color: white;
     z-index: 1;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $mobile) {
         margin-top: 50px;
     }
     
@@ -43,7 +45,7 @@
         z-index: 3;
         position: relative;
         margin-top: 100px;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $mobile) {
             margin-top: 50%;
         }
     }

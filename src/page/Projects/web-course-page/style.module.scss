@@ -1,0 +1,215 @@
+$mobile: 768px;
+$tables: 1024px;
+
+
+.container {
+    cursor: auto;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .nav {
+        position: relative;
+        height: 170px;
+
+        .el {
+            display: none;
+
+        }
+    }
+
+    @media screen and (max-width: $mobile) {
+        .nav {
+            height: 100px;
+        }
+    }
+
+    header {
+
+
+        p {
+            color: black;
+        }
+
+        nav {
+            h3 {
+                color: black;
+            }
+        }
+    }
+
+    .judul {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .judul h1 {
+        margin: 0;
+        font-size: 100px;
+        display: flex;
+        width: 70%;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 48px;
+            width: 80%;
+        }
+
+        @media screen and (max-width: $tables) {
+            font-size: 48px;
+
+
+        }
+    }
+
+    .frameMbck {
+        margin-top: 175px;
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+        .isiweb {
+            background-color: rgb(99, 45, 0);
+            padding: 20px;
+            width: 80%;
+            height: auto;
+
+            .isi {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+
+    }
+
+    .dekripsien {
+
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+
+
+        @media screen and (max-width: $mobile) {
+            flex-direction: column;
+            width: 80%;
+        }
+    }
+
+    .dekripsien div {
+
+        width: 30%;
+
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+        }
+
+        .judulTitle {
+            margin: 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+
+        .dekripsienTitle {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 0;
+        }
+
+    }
+
+    .button {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+
+        background-color: #455CE9;
+        text-align: center;
+        border-radius: 50%;
+        bottom: -60%;
+        right: 15%;
+        cursor: pointer;
+
+        @media screen and (max-width: $tables) {
+            left: 10%;
+            bottom: -80%;
+
+        }
+
+        @media screen and (max-width: $mobile) {
+            width: 130px;
+            height: 130px;
+            bottom: -30%;
+            left: 10%;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 2;
+            position: absolute;
+            color: #ffffff;
+        }
+    }
+
+    .buttonGithub {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #455CE9;
+        text-align: center;
+        border-radius: 50%;
+        bottom: -60%;
+        right: 30%;
+        cursor: pointer;
+
+        @media screen and (max-width: $tables) {
+            right: 10%;
+            bottom: -80%;
+
+        }
+
+        @media screen and (max-width: $mobile) {
+            width: 130px;
+            height: 130px;
+            bottom: -30%;
+            right: 10%;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 2;
+            position: absolute;
+            color: #ffffff;
+        }
+
+    }
+
+    .contact {
+        margin-top: 100px;
+    }
+
+}

@@ -1,3 +1,7 @@
+$mobile: 768px;
+$tables: 1024px;
+
+
 .project{
     display: flex;
     width: 100%;
@@ -9,7 +13,7 @@
     transition: all 0.2s;
     text-decoration: none;
     color: black;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $mobile) {
         padding: 50px 10px 50px 10px;
         width: 70%;
     }
@@ -22,7 +26,11 @@
         font-weight: 400;
         
         transition: all 0.4s;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $tables) {
+            font-size: 40px;
+      
+        }
+        @media screen and (max-width: $mobile) {
             font-size: 20px;
       
         }

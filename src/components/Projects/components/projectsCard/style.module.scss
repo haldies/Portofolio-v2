@@ -1,58 +1,71 @@
- .card {
-     display: none;
-     align-items: center;
-     flex-direction: column;
-     width: 900%;
-     height: 400px;
+$mobile: 768px;
+$tables: 1024px;
+ .projects {
+    
+     color: #202020;
+     text-decoration: none;
 
-     @media screen and (max-width: 768px) {
-        padding: 3%;
-        max-width: 500px;
-        display: flex;
-        width: 94%;
-     }
-
-     .imageProjects {
-         background-color: #613a2e;
-         padding: 10%;
-         width: 80%;
-         height: 60%;
-
-     }
-
-     .imageProjects img {
-         border-radius: 5px;
-         width: 100%;
-         height: 100%;
-
-     }
-
-     .title {
-         font-size: 20px;
-         text-decoration: none;
-         color: #202020;
-         margin: 0;
-         display: flex;
+     .card {
+        margin-top: 20px;
+         display: none;
          align-items: center;
-         height: 80px;
+         flex-direction: column;
          width: 100%;
-         font-weight: 500;
-         text-align: start;
-         border-bottom: #787878 1px solid;
+         height: auto;
+
+         @media screen and (max-width: $mobile) {
+             display: flex;
+         }
+
+         .imageProjects {
+             background-color: #613a2e;
+             padding: 10%;
+
+         }
+
+         .imageProjects img {
+             border-radius: 5px;
+             width: 100%;
+             height: 100%;
+
+         }
+
+         .wrapperTitle {
+             width: 100%;
+         }
+
+         .title {
+             text-decoration: none;
+             color: #202020;
+             font-size: 20px;
+             flex-direction: column;
+             margin: 0;
+             display: flex;
+             height: 40px;
+             justify-content: center;
+             font-weight: bold;
+             text-align: start;
+             border-bottom: #787878 1px solid;
+         }
+
+        
+
+         .containerDeskripsi {
+             margin: 0;
+             padding: 0;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             width: 100%;
+             height: 30px;
+         }
 
      }
 
-     .containerDeskripsi {
-         display: flex;
-         justify-content: space-between;
-         width: 100%;
+     .btnMore {
+         width: 10px;
+
 
      }
-
- }
-
- .btnMore {
-     width: 10px;
-
 
  }
